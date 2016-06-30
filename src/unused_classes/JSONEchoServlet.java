@@ -1,3 +1,5 @@
+package unused_classes;
+
 import org.quickconnectfamily.json.*;
 import org.quickconnectfamily.json.WebServlet;
 import java.io.IOException;

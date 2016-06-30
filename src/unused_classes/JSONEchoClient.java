@@ -1,3 +1,5 @@
+package unused_classes;
+
 import org.quickconnectfamily.json.JSONInputStream;
 import org.quickconnectfamily.json.JSONOutputStream;
 

@@ -1,16 +1,18 @@
+package barney;
+
 import java.util.HashMap;
 
 public class ApplicationController {
-    private HashMap<String, ACHandler> handlerMap = new HashMap();
+    private HashMap<String,Handler> handlerMap = new HashMap();
 
     public void handleRequest(String command, HashMap<String,Object> data){
-        ACHandler aCommandHandler = handlerMap.get(command);
+        Handler aCommandHandler = handlerMap.get(command);
         if (aCommandHandler != null){
             aCommandHandler.handleIt(data);
         }
     }
 
-    public void mapCommand(String aCommand, ACHandler acHandler){
+    public void mapCommand(String aCommand, Handler acHandler){
         handlerMap.put(aCommand,acHandler);
     }
 }
