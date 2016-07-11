@@ -11,11 +11,12 @@ public class ACMain {
         // Series of commands to make sure it knows how to handle different hashmaps of commands
         // Is this the right method to send it?
         // Is it actually mapping this stuff?
-        myLittleACP.mapCommand("book", new BookHandler());
-        myLittleACP.mapCommand("movie", new MovieHandler());
+        // I'm nervous about this part.
+        myLittleACP.mapCommand("books", new BookHandler()); // Should the commands be pluralized?
+        myLittleACP.mapCommand("movies", new MovieHandler());
 
         // Try/catch for user interaction
-        try {
+//        try {
             // Some bland message
             System.out.println("This crappy little app will help you calculate the price of purchasing a few things.");
             System.out.println("You can purchase books or movies.");
@@ -35,8 +36,8 @@ public class ACMain {
 
             myLittleACP.handleRequest(command, data);
 
-        } catch (Exception e) {
+//        } catch (Exception e) {
             System.out.println("Enter a valid type of product to purchase. ");
-        }
+//        }
     }
 }
