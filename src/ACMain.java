@@ -10,6 +10,7 @@ public class ACMain {
 
         // Series of commands to make sure it knows how to handle different hashmaps of commands
         // Is this the right method to send it?
+        // Is it actually mapping this stuff?
         myLittleACP.mapCommand("book", new BookHandler());
         myLittleACP.mapCommand("movie", new MovieHandler());
 

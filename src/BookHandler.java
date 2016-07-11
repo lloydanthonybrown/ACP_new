@@ -2,7 +2,6 @@ import java.text.NumberFormat;
 import java.util.HashMap;
 
 public class BookHandler implements ACHandler{
-
     public void handleIt(HashMap<String, Object> data) { // Is it important to specify the type of hashmap?
 
         HashMap BookData = (HashMap)data;

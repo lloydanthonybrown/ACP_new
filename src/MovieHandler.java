@@ -2,7 +2,7 @@ import java.text.NumberFormat;
 import java.util.HashMap;
 
 public class MovieHandler implements ACHandler {
-    public void handleIt(HashMap<String, Object> data) { // Is it important to specify the type of hashmap?
+    public void handleIt(HashMap<String, Object> data) {
 
         HashMap BookData = (HashMap)data;
         int numberOfMovies = (Integer)BookData.get("amount");
