@@ -17,17 +17,15 @@ public class ACMain {
         try {
             // Some bland message
             System.out.println("This crappy little app will help you calculate the price of purchasing a few things.");
-            System.out.println("***********************************");
             System.out.println("You can purchase books or movies.");
-            System.out.println("***********************************");
-            System.out.println("Which one do you want? ");
 
             // Getting user input as a string - selecting books or movies
+            System.out.println("Which one do you want? ");
             String command = mainScanner.nextLine();
             command = command.toLowerCase();
-            System.out.print("How many do you want? ");
 
             // Getting user input again, but this time retrieving how many of that item they want
+            System.out.print("How many do you want? ");
             int amount = mainScanner.nextInt();
             HashMap data = new HashMap();
             data.put("amount", amount);
