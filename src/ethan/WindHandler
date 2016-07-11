@@ -1,7 +1,5 @@
-
 import java.text.NumberFormat;
 import java.util.HashMap;
-
 
 public class WindHandler implements AChandler {
 
@@ -22,6 +20,5 @@ public class WindHandler implements AChandler {
         }catch (Exception e){
             e.printStackTrace();
         }
-
     }
 }

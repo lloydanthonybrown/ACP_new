@@ -1,16 +1,12 @@
-
 import java.util.*;
 
 public class ACmain {
 
     public static void main(String[] args) {
 
-
     Scanner input = new Scanner(System.in);
 
         ApplicationController delegate = new ApplicationController();
-
-
 
         delegate.handleCommand("solar", new SolarHandler());
         delegate.handleCommand("wind", new WindHandler());
@@ -31,7 +27,6 @@ public class ACmain {
             System.out.print("What is your average energy use per year?:");
             int amount = input.nextInt();
 
-
             HashMap data = new HashMap();
             data.put("amount", amount);
             data.put("solarPrice", .125); //Price per Kilowatt
@@ -40,15 +35,9 @@ public class ACmain {
 
             delegate.handleRequest(command, data);
 
-
         } catch (Exception e) {
             System.out.println("Please enter a correct Energy");
 
         }
-
-
-
-
-
     }
 }

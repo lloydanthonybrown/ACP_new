@@ -1,7 +1,5 @@
-
 import java.text.NumberFormat;
 import java.util.HashMap;
-
 
 public class WaterHandler implements AChandler {
 
@@ -22,6 +20,5 @@ public class WaterHandler implements AChandler {
         }catch (Exception e){
             e.printStackTrace();
         }
-
     }
 }
