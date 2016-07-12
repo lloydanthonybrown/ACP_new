@@ -37,7 +37,7 @@ public class ACMain {
             myLittleACP.handleRequest(command, data);
 
 //        } catch (Exception e) {
-            System.out.println("Enter a valid type of product to purchase. ");
+//            System.out.println("Enter a valid type of product to purchase. ");
 //        }
     }
 }
