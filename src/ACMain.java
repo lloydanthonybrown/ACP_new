@@ -31,8 +31,8 @@ public class ACMain {
             int amount = mainScanner.nextInt();
             HashMap data = new HashMap();
             data.put("amount", amount);
-            data.put("bookPrice", 5);
-            data.put("moviePrice", 10);
+            data.put("bookPrice", 5.0);
+            data.put("moviePrice", 10.0);
 
             myLittleACP.handleRequest(command, data);
 

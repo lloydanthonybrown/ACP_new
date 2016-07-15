@@ -5,9 +5,10 @@ public class BookHandler implements ACHandler{
     public void handleIt(HashMap<String, Object> data) {
 
         HashMap BookData = (HashMap)data;
-        int numberOfBooks = (Integer) BookData.get("amount");
+        double numberOfBooks = ((Integer) BookData.get("amount")).doubleValue();
         // Something is breaking here. I can't cast an Integer to a Double. How do I fix that?
-        double totalAmount = numberOfBooks * (Double) BookData.get("bookPrice");
+        double someBooks = ((Double) BookData.get("bookPrice")).doubleValue();
+        double totalAmount = numberOfBooks * someBooks;
 
         NumberFormat formatter = NumberFormat.getCurrencyInstance();
         // Will this actually print to the console, because the method itself doesn't return anything?
